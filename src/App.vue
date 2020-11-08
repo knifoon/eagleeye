@@ -1,5 +1,4 @@
 <template>
-  test
   <input id="tbaInput" type="TBA" name="" value="" @keyup.enter="update">
   <ul>
     <li v-for="Package in packages" v-bind:key="Package.TBA">
