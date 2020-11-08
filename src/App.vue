@@ -1,33 +1,15 @@
 <template>
-  <input id="tbaInput" type="TBA" name="" value="" @keyup.enter="update">
-  <ul>
-    <li v-for="Package in packages" v-bind:key="Package.TBA">
-      {{Package.TBA}}
-    </li>
-  </ul>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-// import Package from './components/Package.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    // Package
-  },
-  data: function(){
-    return {
-      packages: [
-      ]
-    }
-  },
-  methods: {
-    update: function (event){
-      let value = event.target.value;
-      this.packages.unshift({TBA:value});
-      event.target.value = "";
-
-    }
+    HelloWorld
   }
 }
 </script>
