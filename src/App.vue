@@ -1,8 +1,9 @@
 <template>
-  <input id="tbaInput" type="TBA" name="" value="" @keyup.enter="update">
-  <ul>
+  <input id="tbaInput" type="TBA" name="" value="" autofocus="autofocus" onfocus="this.select()" @keyup.enter="update">
+  <ul id="list">
     <li v-for="Package in packages" v-bind:key="Package.TBA">
-      {{Package.TBA}}
+      <h3>{{Package.TBA}}</h3>
+      <div class="pkgdetails">test</div>
     </li>
   </ul>
 </template>
@@ -39,6 +40,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+}
+#tbaInput {
+}
+#list {
+  text-align: left;
+  list-style: none;
+}
+#list h3 {
+  margin-bottom: 2px;
 }
 </style>
