@@ -105,6 +105,7 @@ box-sizing: border-box;
   text-align: center;
 }
 .modalcontent {
+  border-radius: 8px;
   background: #fff;
   width: 800px;
   margin: 150px auto;
