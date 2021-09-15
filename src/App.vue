@@ -1,7 +1,7 @@
 <template>
   <div class="modal" v-if="modalstate" v-on:click="modal"><div class="modalcontent">
     <b>PS</b>Tool requires the <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/" target="_blank">Tampermonkey</a> add on, and the <a href="https://github.com/knifoon/WorkStuff/raw/master/EE_Test.user.js" target="_blank">eagleeye</a> script to work.<br>
-    You must also be logged into Comp. <br>
+    You must also be logged into Midway. <br>
     If you have any questions chime me <b>@ricaarre</b>
   </div></div>
   <div class= "heading"><input id="tbaInput" type="TBA" name="" value="" autofocus="autofocus" onfocus="this.select()" @keyup.enter="update"> <div class="logo"><strong>PS</strong>Tool</div>
